@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useCallback } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import './App.css';
 import {
   Mail, Phone, MapPin, Linkedin, Github, GraduationCap, Award,
@@ -281,7 +281,7 @@ function App() {
               <div className="skills-container">
                 <div className="skills-col">
                   <h3 className="reveal reveal--up delay-1 skills-col__title">Technical</h3>
-                  {['Python', 'Java', 'Prompt Engineering', 'AI/ML Fundamentals', 'Deep Learning'].map((skill, i) => (
+                  {['Python', 'Java', 'Data Analysis', 'AI/ML', 'Deep Learning', 'Web Development', 'React', 'Node.js', 'Software Development'].map((skill, i) => (
                     <div key={skill} className={`reveal reveal--left delay-${i + 1} skill-bar`}>
                       <div className="skill-bar__info">
                         <span className="skill-bar__name">
@@ -320,6 +320,7 @@ function App() {
                   { title: 'Personal Portfolio Website', tech: 'HTML, CSS, JavaScript', icon: <Code2 size={28} />, desc: 'Responsive personal website showcasing projects and skills.' },
                   { title: 'AI-Based Face Recognition', tech: 'Python, OpenCV', icon: <Brain size={28} />, desc: 'Attendance system using facial recognition with real-time detection.' },
                   { title: 'Transfer Learning using CNN', tech: 'Python, TensorFlow', icon: <Terminal size={28} />, desc: 'Advancement in transfer learning techniques using Convolutional Neural Networks.' },
+                  { title: 'Chatbot Using Python', tech: 'Python, OpenCV', icon: <Brain size={28} />, desc: 'Chatbot built using Python and OpenCV for natural language processing.' },
                 ].map((project, i) => (
                   <div key={project.title} className={`reveal reveal--up delay-${i + 1} project-card`}>
                     <div className="project-card__icon">{project.icon}</div>
@@ -349,6 +350,9 @@ function App() {
                   'Certified of C Programming - Great Learning Academy',
                   'Quality Education Report - Sharda University',
                   'Prompt Engineering Certificate - Sharda University',
+                  'Data Analytics Job Simulation - Deloitte',
+                  'Started With AI on JetSon Nano - Nvidia',
+                  'Worked as LLM Engineer - Ethara AI',
                 ].map((ach, i) => (
                   <div key={ach} className={`reveal reveal--right delay-${i + 1} achievement-row`}>
                     <div className="achievement-row__number">0{i + 1}</div>
